@@ -33,29 +33,16 @@ VALUES
 SELECT item_name, price
 FROM superstore
 ORDER BY price;
---#2 SQL query that will show a statistic about the item prices, like a sum, average, minimum, maximum, or count.This query calculates the total sum of item prices, the average price, the minimum price, the maximum price, and the total count of items in the superstore table.
-SELECT 
-    SUM(price) AS total_price,
-    AVG(price) AS average_price,
-    MIN(price) AS minimum_price,
-    MAX(price) AS maximum_price,
-    COUNT(*) AS item_count
-FROM 
-    superstore;
-    --#3 SQL query that will show a statistic about the price for items in the category of "Kitchen Supplies".
-    SELECT 
-    COUNT (price) AS total_kitchen_supplies,
-    SUM (price) AS total_kitchen_price,
-    AVG (price) AS average_kitchen_price,
-    MIN (price) AS minimum_kitchen_price,
-    MAX (price) AS maximum_kitchen_price
-    FROM superstore
-    WHERE category='Kitchen Supplies';
---#4 This query groups the items by category and calculates the average price for each group.
-   SELECT 
-    category,
-    AVG(price) AS average_price
-FROM 
-    superstore
-GROUP BY 
-    category;
+--#2 SQL query that will show a statistic about the item prices average.
+SELECT AVG(price) AS average_price
+FROM SUPERSTORE;
+--#3 SQL calculate the total stock quantity for items in the "Kitchen Supplies" category.
+SELECT SUM(stock_quantity) AS total_kitchen_supplies_stock
+FROM superstore
+WHERE category = 'Kitchen Supplies';
+--#4  Which category has the highest average rating?
+SELECT category, AVG(average_rating) AS avg_rating
+FROM superstore
+GROUP BY category
+ORDER BY avg_rating DESC
+LIMIT 1;
