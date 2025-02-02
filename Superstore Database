@@ -40,7 +40,7 @@ FROM SUPERSTORE;
 SELECT SUM(stock_quantity) AS total_kitchen_supplies_stock
 FROM superstore
 WHERE category = 'Kitchen Supplies';
---#4  Which category has the highest average rating?
+--#4 SQL Which category has the highest average rating?
 SELECT category, AVG(average_rating) AS avg_rating
 FROM superstore
 GROUP BY category
