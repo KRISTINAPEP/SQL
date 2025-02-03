@@ -46,3 +46,7 @@ FROM superstore
 GROUP BY category
 ORDER BY avg_rating DESC
 LIMIT 1;
+--#5 SQL the total number of units that are currently in stock (i.e., not sold).
+SELECT SUM(stock_quantity) AS not_sold
+FROM superstore;
+
