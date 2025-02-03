@@ -36,15 +36,15 @@ ORDER BY price;
 --#2 SQL query that will show a statistic about the item prices average.
 SELECT AVG(price) AS average_price
 FROM SUPERSTORE;
---#3 SQL calculate the total stock quantity for items in the "Kitchen Supplies" category.
-SELECT SUM(stock_quantity) AS total_kitchen_supplies_stock
+--#3 SQL the expected revenue for items in the "Kitchen Supplies"
+SELECT category, SUM(price * stock_quantity) AS expected_revenue
 FROM superstore
-WHERE category = 'Kitchen Supplies';
---#4 SQL Which category has the highest average rating?
-SELECT category, AVG(average_rating) AS avg_rating
+WHERE category = 'Kitchen Supplies'
+GROUP BY category;
+--#4 SQL a query to identify the product with the lowest average rating.
+SELECT item_name, category, average_rating
 FROM superstore
-GROUP BY category
-ORDER BY avg_rating DESC
+ORDER BY average_rating ASC
 LIMIT 1;
 --#5 SQL the total number of units that are currently in stock (i.e., not sold).
 SELECT SUM(stock_quantity) AS not_sold
