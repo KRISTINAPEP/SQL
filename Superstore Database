@@ -35,7 +35,7 @@ FROM superstore
 ORDER BY price;
 --#2 SQL query that will show a statistic about the item prices average.
 SELECT AVG(price) AS average_price
-FROM SUPERSTORE;
+FROM superstore;
 --#3 SQL the expected revenue for items in the "Kitchen Supplies"
 SELECT category, SUM(price * stock_quantity) AS expected_revenue
 FROM superstore
