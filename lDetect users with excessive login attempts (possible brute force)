@@ -1,0 +1,6 @@
+SELECT UserID, COUNT(*) AS LoginAttempts
+FROM LoginLogs
+GROUP BY UserID
+HAVING COUNT(*) > 10;
+
+README: Explain this simulates brute force detection.
