@@ -9,7 +9,7 @@ Welcome to my SQL portfolio! This repository showcases hands-on query logic for 
 
 - `ip-anomaly-detection/`  
   - [IP Anomaly Query](./ip-anomaly-detection/ip_anomaly_query.sql)  
-  - [IP Anomaly Query v2](./ip-anomaly-detection/ip_anomaly_query_v2.sql)
+  - [IP Anomaly Query v2](ip_anomaly_query_v2.sql)
 
 - `suspicious-login-pattern/`  
   - [Suspicious Login Query](./suspicious-login-pattern/suspicious_login_query.sql)
