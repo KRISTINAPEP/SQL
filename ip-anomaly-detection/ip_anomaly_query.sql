@@ -7,7 +7,7 @@ This SQL query simulates a cybersecurity scenario where users are flagged for lo
 - Filters for users with more than 3 unique IPs in 30 days
 - Uses `GROUP BY`, `HAVING`, and `DISTINCT`
 
-## 🛡 Cybersecurity Relevance
+##  Cybersecurity Relevance
 This mirrors real-world SOC analyst tasks like:
 - Detecting session hijacking or credential misuse
 - Monitoring authentication logs for anomalies
@@ -19,7 +19,7 @@ This mirrors real-world SOC analyst tasks like:
 Table: `LoginLogs`  
 Columns: `UserID`, `IP_Address`, `Timestamp`
 
-## 🧾 Sample Output
+##  Sample Output
 | UserID | UniqueIPs |
 |--------|-----------|
 | user123 | 5         |
