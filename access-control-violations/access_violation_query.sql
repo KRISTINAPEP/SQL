@@ -29,7 +29,7 @@ Columns:
 - `AccessLogs`: `UserID`, `UserRole`, `ResourceID`  
 - `Resources`: `ResourceID`, `ResourceName`, `AccessLevel`
 
-## 🧾 Sample Output
+## Sample Output
 | UserID | ResourceName |
 |--------|--------------|
 | user123 | AdminPanel  |
