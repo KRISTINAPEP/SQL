@@ -20,9 +20,18 @@ This mirrors real-world SOC analyst tasks like:
 - Enforcing zero trust and role-based access control
 - Detecting privilege misuse or policy violations
 - Supporting compliance and audit investigations
+  
+**MITRE Mapping:** T1078 – Valid Accounts
 
 ##  Dataset Assumption
 Tables: `AccessLogs`, `Resources`  
 Columns:  
 - `AccessLogs`: `UserID`, `UserRole`, `ResourceID`  
 - `Resources`: `ResourceID`, `ResourceName`, `AccessLevel`
+
+## 🧾 Sample Output
+| UserID | ResourceName |
+|--------|--------------|
+| user123 | AdminPanel  |
+| user456 | ConfigTool  |
+
